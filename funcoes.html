@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+
+<body>
+
+    <script>
+        //definindo uma função que soma  um valor com 1 e retorna esse valor
+        function soma1(x) {
+            return x + 1;
+        }
+        var y = 2;
+        soma(y); //chamando a função e passando como parametro o y;
+
+        var quadrado = function(x) { //a função também pode ser atribbuida mas no final precisa do ";"
+            return x * x;
+        };
+
+        quadrado(soma(y)); // podemos chamar as duas funções em uma expressão;
+
+
+        var a = [];
+        a.pus(1, 2, 3); //função do js para adicionar elementos a um array
+        a.reverse(); // função para inverter a ordem dos elementos
+
+        points.dist = function() { // a palavra this se refere ao objeto no qual o método é definido 
+            var p1 = this[0];
+            var p2 = this[1];
+            var a = p2.x - p1.x;
+            var b = p2.y - p1.y;
+            return Math.sqrt(a * a + b * b);
+        };
+        points.dist();
+    </script>
+</body>
+
+</html>
